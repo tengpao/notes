@@ -18,10 +18,10 @@ sudo vim .git/config #在后面追加下面两行
 * 客户端生成id_rsa密钥对，多个密钥需要追加
 
 ```
-ssh-keygen -t rsa -C 'second@mail.com' #然后输入路径和文件名~/.ssh/id_rsa
-#如果输入的文件非默认的id_rsa文件，那么需要添加下面一句
-#然后把相应的.pub文件中内容追加到.ssh/authorized_keys文件中
-ssh-add ～/.ssh/id_rsa_second
+ssh-keygen -t rsa -C 'second@mail.com' #然后输入路径和文件名~/.ssh/id_rsa  
+#如果输入的文件非默认的id_rsa文件，那么需要添加下面一句  
+#然后把相应的.pub文件中内容追加到.ssh/authorized_keys文件中  
+ssh-add ～/.ssh/id_rsa_second  
 ```
 
 * 客户端克隆远程项目
