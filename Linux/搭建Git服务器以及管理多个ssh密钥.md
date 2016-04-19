@@ -11,8 +11,8 @@ cd project.git
 sudo vim .git/config #在后面追加下面两行
 ```
 
-> [receive]
->       denyCurrentBranch = ignore
+> [receive]  
+    denyCurrentBranch = ignore
 
 * 在用户目录下的`.ssh/authorized_keys`的文件中追加收集用户的id_rsa.pub信息
 * 客户端生成id_rsa密钥对，多个密钥需要追加
