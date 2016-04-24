@@ -13,3 +13,8 @@ cd /usr/local/mongodb
 
 
 ```
+
+* 查看mongo启动状态
+```
+ps -aux | grep 'mongo'
+```
