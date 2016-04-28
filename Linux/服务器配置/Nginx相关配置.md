@@ -5,7 +5,8 @@
 
 #### 配置
 ```
-# 将php请求转发到fastcgi,include fastcgi_params不管用,需要改成下面一行
+# 将php请求转发到fastcgi
+# include fastcgi_params 不管用需要改成它下面那行
 location ~ \.php$ {
     root           /home/tommie/www;
     fastcgi_pass   127.0.0.1:9000;
